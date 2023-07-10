@@ -1,0 +1,5 @@
+module bit_adder(input logic [1:0]a,b, input logic clr, output logic [2:0]s);
+logic c;
+ha a2(a[0],b[0],clr,c,s[0]);
+fa a1(a[1],b[1],c,clr,s[2],s[1]);
+endmodule
